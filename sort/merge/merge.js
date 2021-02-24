@@ -12,7 +12,16 @@ function merge( arr1, arr2 ) {
             j++
         }
     }
+    while ( i < arr1.length ) {
+        results.push( arr1[ i ] )
+        i++
+    }
+    while ( j < arr1.length ) {
+        results.push( arr2[ i ] )
+        j++
+    }
     return results
 }
 const mia = merge( [ 1, 10, 50 ], [ 2, 14, 99, 100 ] )
-console.log(mia)
+console.log( mia )
+//this can be also done via using reduce method in the array
